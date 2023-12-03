@@ -190,4 +190,25 @@ h2 {
 
 .sign-link p a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
+=======
+}
+
+.dismissible-button {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #721c24;
+    cursor: pointer;
+    float: right;
+>>>>>>> origin/main
 }

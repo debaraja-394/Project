@@ -729,6 +729,15 @@ MEDIA QUERIES FOR SMALL LAPTOP AND BIG TABLETS
     }
 }
 
+<<<<<<< HEAD
+=======
+
+.setting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+>>>>>>> origin/main
 /* ================= 
 MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES
 ==================== */
@@ -775,6 +784,7 @@ MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES
     .customize-theme .card {
         width: 80vw;
     }
+<<<<<<< HEAD
 }
 
 .setting{
@@ -786,4 +796,6 @@ MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES
 }
 a{
      color: black;
+=======
+>>>>>>> origin/main
 }

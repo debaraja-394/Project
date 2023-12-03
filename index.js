@@ -1,4 +1,8 @@
+<<<<<<< HEAD
    // Sidebar
+=======
+// Sidebar
+>>>>>>> origin/main
 const menuItems = document.querySelectorAll('.menu-item');
 
 // Messages 
