@@ -5,11 +5,7 @@
         $Password_Log=$_POST['Password_Log'];
 
         $sql="SELECT * FROM `Users` WHERE `Username` like '$Username_Log'";
-<<<<<<< HEAD
         $usernameExists=true;
-=======
-
->>>>>>> origin/main
         $result_log=mysqli_query($conn,$sql);
 
         $rows_log=mysqli_num_rows($result_log);
@@ -29,12 +25,9 @@
                 }
             }
         }
-<<<<<<< HEAD
         else{
             $usernameExists=false;
         }
-=======
->>>>>>> origin/main
     }
 
     ?>
