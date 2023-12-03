@@ -229,7 +229,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="./image/CUTTACK 3.jpg">
+                                <img src="" id="randomImage1">
                             </div>
 
                             <div class="action-buttons">
@@ -284,7 +284,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="image/INDIA 1.jpg">
+                                <img src="" id="randomImage2">
                             </div>
 
                             <div class="action-buttons">
@@ -339,7 +339,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="image/GHOST.jpg">
+                                <img src="" id="randomImage3">
                             </div>
 
                             <div class="action-buttons">
@@ -391,7 +391,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="image/GIET PHOTO 8.jpeg">
+                                <img src="" id="randomImage4">
                             </div>
 
                             <div class="action-buttons">
@@ -1162,6 +1162,7 @@ session_start();
             </div>
         </div>
         <script src="./index.js"></script>
+        <script src="./gobinda.js"></script>
     </body>
 
 </html>
