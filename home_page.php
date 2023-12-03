@@ -1,4 +1,5 @@
-<?php
+<?php   
+
 session_start();
 
 ?>
@@ -27,7 +28,7 @@ session_start();
                     <input type="search" placeholder="Search for creators, inspirations, and projects">
                 </div>
                 <div class="create">
-                    <label class="btn btn-primary" for="create-post">Create</label>
+                    <!-- <label class="btn btn-primary" for="create-post">Create</label> -->
                     <div class="profile-photo">
                         <img src="image/logo.png" alt="">
                     </div>
@@ -47,7 +48,7 @@ session_start();
                         <div class="handle">
                             <h4>Reach Me</h4>
                             <p class="text-muted">
-                                @<?php echo$_SESSION['username']?>
+                                @<?php echo $_SESSION['username']; ?>
                             </p>
                         </div>
                     </a>
@@ -148,7 +149,7 @@ session_start();
                             <h3>Theme</h3>
                         </a>
 
-                        <a href="./index3.php" class="setting" style="display: flex ;">
+                        <a href="./index3.php" class="setting">
                             <span><i class="uil uil-setting"></i></span>
                             <h3>Setting</h3>
 
@@ -228,7 +229,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="./image/CUTTACK 3.jpg">
+                                <img src="" id="randomImage1">
                             </div>
 
                             <div class="action-buttons">
@@ -283,7 +284,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="image/INDIA 1.jpg">
+                                <img src="" id="randomImage2">
                             </div>
 
                             <div class="action-buttons">
@@ -338,7 +339,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="image/GHOST.jpg">
+                                <img src="" id="randomImage3">
                             </div>
 
                             <div class="action-buttons">
@@ -390,7 +391,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="image/GIET PHOTO 8.jpeg">
+                                <img src="" id="randomImage4">
                             </div>
 
                             <div class="action-buttons">
@@ -444,7 +445,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="" id="randomImage5">
+                                <img src="image/NATURE 4.jpg">
                             </div>
 
                             <div class="action-buttons">
@@ -498,7 +499,7 @@ session_start();
                             </div>
 
                             <div class="photo">
-                                <img src="" id="randomImage5">
+                                <img src="image/JAGANNATH 4.jpg">
                             </div>
 
                             <div class="action-buttons">
@@ -1161,7 +1162,7 @@ session_start();
             </div>
         </div>
         <script src="./index.js"></script>
-        <script src="./img.js"></script>
+        <script src="./gobinda.js"></script>
     </body>
 
 </html>
