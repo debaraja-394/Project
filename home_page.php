@@ -28,7 +28,7 @@ session_start();
                     <input type="search" placeholder="Search for creators, inspirations, and projects">
                 </div>
                 <div class="create">
-                    <label class="btn btn-primary" for="create-post">Create</label>
+                    <!-- <label class="btn btn-primary" for="create-post">Create</label> -->
                     <div class="profile-photo">
                         <img src="image/logo.png" alt="">
                     </div>
