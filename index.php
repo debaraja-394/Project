@@ -42,31 +42,31 @@ $registered = false;
             </form>
         </div>
         <?php
-        
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $Username = $_POST['Username'];
             $Password = $_POST['Password'];
             $Email = $_POST['Email'];
-            if($Username!=null){
-            $userExists = "SELECT * FROM `Users` WHERE Username like '$Username';";
-            
-            $result = mysqli_query($conn, $userExists);
-            $rows = mysqli_num_rows($result);
-            if ($rows > 0) {
-                // echo "user alrady exists";
-                $userAlreadyExists = true;
-            } else {
-                $hash = password_hash($Password, PASSWORD_DEFAULT);
-                $sql = "INSERT INTO `Users` (`ID`,`Username`,`Email`,`Password`) VALUES (null,'$Username','$Email','$hash');";
-                
-                $resultSql = mysqli_query($conn, $sql);
+            if ($Username != null) {
+                $userExists = "SELECT * FROM `Users` WHERE Username like '$Username';";
 
-                if ($result) {
-                    // echo 'successfully registered';
-                    $registered = true;
+                $result = mysqli_query($conn, $userExists);
+                $rows = mysqli_num_rows($result);
+                if ($rows > 0) {
+                    // echo "user alrady exists";
+                    $userAlreadyExists = true;
+                } else {
+                    $hash = password_hash($Password, PASSWORD_DEFAULT);
+                    $sql = "INSERT INTO `Users` (`ID`,`Username`,`Email`,`Password`) VALUES (null,'$Username','$Email','$hash');";
+
+                    $resultSql = mysqli_query($conn, $sql);
+
+                    if ($result) {
+                        // echo 'successfully registered';
+                        $registered = true;
+                    }
                 }
             }
-        }
         }
         ?>
         <div class="form-wrapper sign-in">
@@ -92,6 +92,15 @@ $registered = false;
         </div>
     </div>
     <?php require 'login.php'; ?>
+
+    <?php if ($usernameExists == false) : ?>
+        <div id="alertMessage" class="alert alert-danger alert-dismissible fade show" role="alert" style="position: fixed;top:0;">
+            <strong>Failed!</strong> Username doesn't exists.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+    <?php endif; ?>
+
     <?php if ($userAlreadyExists) : ?>
         <div id="alertMessage" class="alert alert-danger alert-dismissible fade show" role="alert" style="position: fixed;top:0;">
             <strong>Failed!</strong> Username already exists.
@@ -106,9 +115,9 @@ $registered = false;
     <?php endif; ?>
     <script>
         setTimeout(function() {
-                document.getElementById('alertMessage').style.display = 'none';
-            }, 5000);
-        </script>
+            document.getElementById('alertMessage').style.display = 'none';
+        }, 5000);
+    </script>
     </script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
